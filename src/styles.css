@@ -1,0 +1,144 @@
+/* Ensure full height but keep form static-sized */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light grey background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fixed-size form container */
+.container {
+    width: 600px; /* Fixed width */
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-left: 5px solid #007bff;
+}
+
+/* Input box improvements */
+.input-box {
+    width: 100%;
+    height: 80px; /* Adjusted height */
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input-box:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Submit button with improved design */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 6px rgba(0, 91, 187, 0.2);
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Response container */
+.response-container {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid #007bff;
+    font-size: 16px;
+}
+
+
+h3 {
+    color: #121518;
+    margin-bottom: 10px;
+}
+
+
+.multi-filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.multi-filter-legend {
+    font-size: 12px;  /* Small text */
+    font-weight: bold;
+    color: #000;  /* Black color */
+    margin-right: 10px; /* Space between label and dropdown */
+}
+
+/* Dropdown Styling */
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: white;
+}
+
+.dropdown:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Dropdown select box */
+.filter-dropdown {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.filter-dropdown:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Smooth transition effects */
+*, *:before, *:after {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+

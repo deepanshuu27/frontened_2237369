@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.json-input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.dropdown {
+  margin-top: 10px;
+  width: 50%;
+  display: inline-block;
+}
+
+.response-text {
+  font-size: 16px;
+  margin-top: 10px;
+}
