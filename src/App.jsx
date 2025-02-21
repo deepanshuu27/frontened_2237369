@@ -26,7 +26,7 @@ function App() {
     try {
       const jsonData = JSON.parse(inputData); 
 
-      const res = await axios.post("http://localhost:5000/bfhl", jsonData);
+      const res = await axios.post("https://backened-2237369.onrender.com", jsonData);
       setResponse(res.data);
     } catch (err) {
       setError("Invalid JSON input or Failed to fetch API.");
